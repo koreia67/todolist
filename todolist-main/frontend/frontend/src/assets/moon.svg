@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <defs>
+    <linearGradient id="m" x1="60" y1="30" x2="150" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF3DC"/><stop offset="1" stop-color="#FFC9A3"/></linearGradient>
+    <linearGradient id="c" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#cfc8ff" stop-opacity=".75"/></linearGradient>
+    <mask id="cut"><rect width="240" height="200" fill="#fff"/><circle cx="128" cy="62" r="46" fill="#000"/></mask>
+  </defs>
+  <circle cx="108" cy="82" r="66" fill="#2dd4bf" opacity=".13"/>
+  <circle cx="104" cy="78" r="48" fill="url(#m)" mask="url(#cut)"/>
+  <path d="M182 36l3.2 8.8 8.8 3.2-8.8 3.2-3.2 8.8-3.2-8.8-8.8-3.2 8.8-3.2z" fill="#FFD9A8"/>
+  <path d="M40 54l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z" fill="#C9B8FF"/>
+  <circle cx="208" cy="92" r="2.5" fill="#fff" opacity=".8"/><circle cx="64" cy="22" r="2" fill="#fff" opacity=".7"/><circle cx="160" cy="18" r="1.6" fill="#fff" opacity=".6"/>
+  <ellipse cx="146" cy="146" rx="56" ry="17" fill="url(#c)"/>
+  <circle cx="122" cy="134" r="20" fill="url(#c)"/><circle cx="154" cy="128" r="26" fill="url(#c)"/>
+  <ellipse cx="58" cy="164" rx="30" ry="9" fill="url(#c)" opacity=".5"/>
+</svg>

@@ -1,0 +1,43 @@
+### Health check
+GET http://localhost:3333/health
+
+### Listar tarefas
+GET http://localhost:3333/api/tasks
+
+### Buscar tarefas por nome
+GET http://localhost:3333/api/tasks?search=fastify
+
+### Listar apenas pendentes
+GET http://localhost:3333/api/tasks?status=pending
+
+### Criar uma tarefa com data limite
+POST http://localhost:3333/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Estudar Fastify",
+  "dueDate": "2026-09-20"
+}
+
+### Criar uma tarefa sem data limite
+POST http://localhost:3333/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Revisar rotas da API"
+}
+
+### Marcar como concluída (troque 1 pelo id retornado na criação)
+PATCH http://localhost:3333/api/tasks/1
+Content-Type: application/json
+
+{"completed": true}
+
+### Editar título e data (troque 1 pelo id retornado na criação)
+PATCH http://localhost:3333/api/tasks/1
+Content-Type: application/json
+
+{"title": "Estudar Fastify e Fastify plugins", "dueDate": "2026-09-25"}
+
+### Excluir (troque 1 pelo id retornado na criação)
+DELETE http://localhost:3333/api/tasks/1
